@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG Programmieren</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AG Programmieren</h1>
+        <h2>Materialien und Beispiele</h2>
+        <h3>Informationen zur AG</h3>
+        <div class="info-blocks">
+            <div class="info-block">
+                <h4>Was wir machen können:</h4>
+                <ul>
+                    <li>Spiele programmieren mit Scratch (blockbasierte Programmiersprache)</li>
+                    <li>Einfache Programme programmieren mit Python (textbasierte Programmiersprache)</li>
+                    <li>Einfache Webseiten bauen mit HTML und CSS (Gestaltungssprachen für Webseiten)</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <h4>Was leider (noch) nicht geht:</h4>
+                <ul>
+                    <li>Lego Mindstorms NXT Roboter programmieren (die Programme dafür sind alt und funktionieren nicht problemlos auf modernen PCs)</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <strong>Deshalb: Robotik AG &rarr; Programmieren AG</strong>
+            </div>
+        </div>
+        <h3>AG-Angebote</h3>
+        <div class="code-examples">
+            <div class="code-example">
+                <div class="code-example-img">
+                    <img src="assets/img/scratchhelloworld.JPG" alt="Scratch Hello World Program">
+                </div>
+                <a href="#scratch" class="link-btn">Scratch</a>
+            </div>
+            <div class="code-example">
+                <div class="code-example-img">
+                    <img src="assets/img/pythonhelloworld.JPG" alt="Scratch Hello World Program">
+                </div>
+                <a href="#python" class="link-btn">Python</a>
+            </div>
+            <div class="code-example">
+                <div class="code-example-img">
+                    <img src="assets/img/htmlhelloworld.JPG" alt="Scratch Hello World Program">
+                </div>
+                <a href="#html" class="link-btn">HTML und CSS</a>
+            </div>
+        </div>
+        <h3>Beispiele</h3>
+        <div class="games">
+            <div class="game-card">
+                <h4 class="game-title">Asteroids</h3>
+                <iframe src="games/Asteroids.html" class="game" frameborder="0"></iframe>
+                <div class="buttons">
+                    <a href="https://kenney.nl/assets/crosshair-pack" class="link-btn" target="blank">Fadenkreuze downloaden</a>
+                    <a href="https://kenney.nl/assets/simple-space" class="link-btn" target="blank">Asteroiden downloaden</a>
+                </div>
+                <div class="build-suggestions">
+                    Bestandteile:
+                    <ul>
+                        <li>ein Fadenkreuz</li>
+                        <li>zwei Asteroidenspawner</li>
+                    </ul>
+                    Hinweise:
+                    <ol>
+                        <li>Das Fadenkreuz soll sich bei Mausklick zur Position der Maus bewegen.</li>
+                        <li>Wenn ein Asteroid angeklickt ist, soll dieser gelöscht werden und es wird ein Treffer gezählt.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="game-card">
+                <h4 class="game-title">Road Crosser</h3>
+                <iframe src="games/RoadCrosser.html" class="game" frameborder="0"></iframe>
+                <div class="buttons">
+                    <a href="https://kenney.nl/assets/pixel-vehicle-pack" class="link-btn" target="blank">Pixel Fahrzeuge downloaden</a>
+                </div>
+                <div class="build-suggestions">
+                    Bestandteile:
+                    <ul>
+                        <li>eine Spielfigur</li>
+                        <li>drei Fahrzeugspawner</li>
+                    </ul>
+                    Hinweise:
+                    <ol>
+                        <li>Die Spielfigur lässt sich mit WASD (alternativ Pfeiltasten) bewegen.</li>
+                        <li>Wenn ein Fahrzeug die Spielfigur berührt, soll die Spielfigur auf die Startposition zurückgesetzt werden.</li>
+                        <li>Wenn die Spielfigur eine bestimmte y-Position überschreitet (y-Position > "selbst gewählte Zahl"), gibt es einen Punkt und die Spielfigur wird auf die Startposition zurückgesetzt.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="game-card">
+                <h4 class="game-title">Tappy Plane</h3>
+                <iframe src="games/TappyPlane.html" class="game" frameborder="0"></iframe>
+                <div class="buttons">
+                    <a href="https://kenney.nl/assets/tappy-plane" class="link-btn" target="blank">Tappy Plane Elemente downloaden</a>
+                </div>
+                <div class="build-suggestions">
+                    Bestandteile:
+                    <ul>
+                        <li>ein Flugzeug</li>
+                        <li>zwei Bergspawner</li>
+                    </ul>
+                    Hinweise:
+                    <ol>
+                        <li>Das Flugzeug verliert dauerhaft an Höhe und mit Klick auf die Leertaste fliegt das Flugzeug wieder ein wenig nach oben.</li>
+                        <li>Die Berge spawnen am rechten Rand des Spielbereichs und bewegen sich dauerhaft nach links.</li>
+                        <li>Wenn die Berge eine bestimmte x-Position unterschreiten (x-Position < "selbst gewählte Zahl"), gibt es einen Punkt und die Bergklone werden gelöscht.</li>
+                        <li>Die beiden Berge sind im Wesentlichen gleich nur der Teil, der die Punkte hochzählt muss nur bei einem der Berge eingebaut werden.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <h3>Kurzanleitungen</h3>
+        <div class="manuals">
+            <div class="manual-card">
+                <h4 class="manual-title">Bewegung mit WASD</h4>
+                <div class="manual">
+                    <div class="scratch-block-img">
+                        <img src="assets/img/wasdmovement.jpg" alt="WASD Movement implemented in Scratch">
+                    </div>
+                    <div class="scratch-block-explanation">
+                        Bei Spielbeginn sollte die Spielfigur auf die Startposition zurückgesetzt werden. <br><br>
+                        Wir brauchen eine "wiederhole dauerhaft"-Schleife damit das Spiel dauerhaft die Tasteneingaben überprüft. <br><br>
+                        Bewegung findet in Scratch durch veränderung der x-Position und der y-Position statt. Der Punkt in der Mitte des Spielfelds ist x=0, y=0. <br><br>
+                        Für Bewegung nach oben oder unten ändern wir y um eine Zahl bzw. Minus diese Zahl. Für Bewegung nach links oder rechts ändern wir entsprechend x.
+                    </div>
+                </div>
+            </div>
+            <div class="manual-card">
+                <h4 class="manual-title">Objektspawner</h4>
+                <div class="manual">
+                    <div class="scratch-block-img">
+                        <img src="assets/img/spawner.jpg" alt="WASD Movement implemented in Scratch">
+                    </div>
+                    <div class="scratch-block-explanation">
+                        Ein Spawner ist ein verstecktes Objekt irgendwo auf dem Bildschirm. <br><br>
+                        Der Spawner erstellt innerhalb der "wiederhole dauerhaft"-Schleife alle paar Sekunden einen neuen Klon von sich selbst. <br><br>
+                        Das Verhalten des gespawnten Klons wird unter dem Block "Wenn ich als Klon entstehe" erstellt. <br><br>
+                        Da das Objekt versteckt gespawnt wird, muss es sich erstmal wieder zeigen. <br><br>
+                        Danach können wir beispielsweise ein Bewegungsverhalten des Objektes erstellen.
+                    </div>
+                </div>
+            </div>
+            <div class="manual-card">
+                <h4 class="manual-title">Einfaches Springen</h4>
+                <div class="manual">
+                    <div class="scratch-block-img">
+                        <img src="assets/img/simplejumping.jpg" alt="WASD Movement implemented in Scratch">
+                    </div>
+                    <div class="scratch-block-explanation">
+                        Die einfachste Variante des Springens ist ein einfaches Gleiten nach oben und danach Gleiten nach unten. <br><br>
+                        Dafür nutzen wir den "gleite in 1 Sekunde nach"-Block, wobei wir als x die x-Position unserer Spielfigur und als y die y-Position unserer Spielfigur + die Höhe des Sprungs wählen. <br><br>
+                        Nach dem ersten "gleite in 1 Sekunde nach"-Block befindet sich die Spielfigur an einer neuen y-Position. Um wieder zur Ausgangsposition zurückzukommen, müssen wir einen zweiten "gleite in 1 Sekunde nach"-Block einbauen. Dieses mal wählen wir y als y-Position unserer Spielfigur - die Höhe des Sprungs. <br><br>
+                        Beim Springen kann die Tasteneingabe auch einfach über ein "Wenn Taste ... gedrückt wird"-Block geprüft werden. <br><br>
+                        Der Nachteil dieser Variante ist, dass die anderen Eingaben während des Sprungs von dem Programm geblockt werden, da erstmal beide "gleite in 1 Sekunde nach"-Blöcke ausgeführt werden.
+                    </div>
+                </div>
+            </div>
+            <div class="manual-card">
+                <h4 class="manual-title">Verbessertes Springen</h4>
+                <div class="manual">
+                    <div class="scratch-block-img">
+                        <img src="assets/img/improvedjumping.jpg" alt="WASD Movement implemented in Scratch">
+                    </div>
+                    <div class="scratch-block-explanation">
+                        Das einfache Springen lässt sich verbessern, indem wir die "gleite in 1 Sekunde nach"-Blöcke durch "wiederhole x-mal"-Blöcke ersetzen. <br><br>
+                        Das Wichtige hierbei ist, dass die Anzahl an Wiederholungen mal der Zahl, um die ihr y ändert, in beiden "wiederhole x-mal"-Blöcken bis auf das - Zeichen gleich ist. <br><br>
+                        So könnt ihr mit "wiederhole 5-mal" "ändere y um 20" schnell hochspringen und mit "wiederhole 10-mal" "ändere y um -10" langsamer fallen.
+                    </div>
+                </div>
+            </div>
+            <div class="manual-card">
+                <h4 class="manual-title">Punktesystem</h4>
+                <div class="manual">
+                    <div class="scratch-block-img">
+                        <img src="assets/img/scoresystem.JPG" alt="WASD Movement implemented in Scratch">
+                    </div>
+                    <div class="scratch-block-explanation">
+                        Für ein Punktesystem brauchen wir eine Variable. Eine Variable ist in der Programmierung etwas, wo wir Werte (in Scratch hauptsächlich Zahlen) speichern, verändern und abrufen können. <br><br>
+                        Unter dem Menüpunkt "Variablen" lässt sich eine neue Variable beispielsweise mit dem Namen "Punkte" für alle Figuren erstellen. <br><br>
+                        Damit nicht die Punkte aus dem vorherigen Spiel übernommen werden, müssen wir bei Spielstart den Wert der Variablen "Punkte" erstmal auf 0 setzen. <br><br>
+                        Dann müsst ihr euch überlegen, wann es Punkte geben soll. Falls dieser Fall eintritt, ändert ihr einfach den Wert, der gerade in der Variablen "Punkte" gespeichert ist, um 1.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
